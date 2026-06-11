@@ -19,32 +19,36 @@ import java.util.Date;
 public class Product {
 
     @Id
-    private int prodId;
-    private String prodName;
-    private String prodDesc;
-    private String prodBrand;
-    private BigDecimal prodPrice;
-    private String prodCat;
+    private int id;
+    private String name;
+    private String description;
+    private String brand;
+    private BigDecimal price;
+    private String category;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
-    private Date prodReldate;
-    private Boolean prodAvl;
-    private int prodQuant;
+    //@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+    private Date releaseDate;
+    private Boolean productAvailable;
+    private int stockQuantity;
 
     @Override
     public String toString() {
         return "Product{" +
-                "prodId=" + prodId +
-                ", prodName='" + prodName + '\'' +
-                ", prodDesc='" + prodDesc + '\'' +
-                ", prodBrand='" + prodBrand + '\'' +
-                ", prodPrice=" + prodPrice +
-                ", prodCat='" + prodCat + '\'' +
-                ", prodReldate=" + prodReldate +
-                ", prodAvl=" + prodAvl +
-                ", prodQuant=" + prodQuant +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", category='" + category + '\'' +
+                ", releaseDate=" + releaseDate +
+                ", productAvailable=" + productAvailable +
+                ", stockQuantity=" + stockQuantity +
                 '}';
     }
+
+
+
+
 
 
 
